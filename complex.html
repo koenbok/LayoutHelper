@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+	
+	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="layout.js"></script>
+	
+	<style type="text/css" media="screen">
+	
+		body {
+			margin:0px;
+			padding:0px;
+			font: 22px/1.3em "Helvetica";
+		}
+		
+		.test1 {
+			position: absolute;
+			width: 50%;
+			height: 400px;
+			background-color:rgba(0,0,255,0.1);
+		}
+		.test2 {
+			position: absolute;
+			top:50%;
+			width: 50%;
+			top:0px;
+			right:0px;
+			bottom: 400px;
+		}
+
+		.test3 {
+			position: absolute;
+			width: 50%;
+			top: 400px;
+			bottom:0px;
+			left:0px;
+			background-color:rgba(255,0,0,0.1);
+		}
+		.test4 {
+			position: absolute;
+			width: 50%;
+			height: 400px;
+			bottom:0px;
+			left:50%;
+			background-color:rgba(255,0,255,0.1);
+		}
+
+		.row {
+			position: relative;
+			width: 100%;
+			height: 50px;
+			margin-bottom: 2px;
+		}
+		
+		.row .image {
+			position: absolute;
+			left: 10px;
+			width: 100px;
+		}
+
+		.row .text {
+			position: absolute;
+			left: 120px;
+			right: 0px;
+
+		}
+		
+		div {
+			background-color:rgba(0,150,255,0.1);
+		}
+		
+		.test3 .one {
+			margin: 70px;
+			width: 100px;
+			height: 50px;
+		}
+		
+		.col {
+			height: 100%;
+			width: 25%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="test1 color">
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+		<div class="row">
+			<div class="image midy">image</div>
+			<div class="text midy">text</div>
+		</div>
+	</div>
+	<div class="test2">
+		<div class="minx miny">hallo</div>
+		<div class="midx miny">hallo</div>
+		<div class="maxx miny">hallo</div>
+		<div class="minx midy">hallo</div>
+		<div class="midx midy">hallo</div>
+		<div class="maxx midy">hallo</div>
+		<div class="minx maxy">hallo</div>
+		<div class="midx maxy">hallo</div>
+		<div class="maxx maxy">hallo</div>
+	</div>
+	<div class="test3">
+		<div class="minx miny one">
+			<div class="maxx maxy">hallo</div>
+		</div>
+		<div class="midx miny one">
+			<div class="midx maxy">hallo</div>
+		</div>
+		<div class="maxx miny one">
+			<div class="minx maxy">hallo</div>
+		</div>
+		<div class="minx midy one">
+			<div class="maxx midy">hallo</div>
+		</div>
+		<div class="midx midy one">
+			<div class="midx midy">hallo</div>
+		</div>
+		<div class="maxx midy one">
+			<div class="minx midy">hallo</div>
+		</div>
+		<div class="minx maxy one">
+			<div class="maxx miny">hallo</div>
+		</div>
+		<div class="midx maxy one">
+			<div class="midx miny">hallo</div>
+		</div>
+		<div class="maxx maxy one">
+			<div class="minx miny">hallo</div>
+		</div>
+	</div>
+	<div class="test4">
+		<div class="col minx">
+			<div class="midx midy">col1</div>
+		</div>
+		<div class="col midx">
+			<div class="midx midy">col2</div>
+		</div>
+		<div class="col maxx">
+			<div class="midx midy">col3</div>
+		</div>
+	</div>
+</body>
+</html>
