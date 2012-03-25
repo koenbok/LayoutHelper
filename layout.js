@@ -1,28 +1,33 @@
 (function() {
-  var addCss, layoutHelper;
+  var addCss, getCss, layoutHelper;
   layoutHelper = function() {
     $(".midx").map(function(i, node) {
-      var parentWidth, width;
+      var padding, parentWidth, width;
       node = $(node);
       parentWidth = node.parent().width();
       width = node.width();
+      padding = getCss(node, "padding-left") + getCss(node, "padding-right");
       return node.css({
         "margin-left": "0px",
         "margin-right": "0px",
-        "left": parentWidth / 2.0 - (width / 2.0)
+        "left": parentWidth / 2.0 - (width / 2.0) - (padding / 2.0)
       });
     });
     return $(".midy").map(function(i, node) {
-      var height, parentHeight;
+      var height, padding, parentHeight;
       node = $(node);
       parentHeight = node.parent().height();
       height = node.height();
+      padding = getCss(node, "padding-top") + getCss(node, "padding-bottom");
       return node.css({
         "margin-top": "0px",
         "margin-bottom": "0px",
-        "top": parentHeight / 2.0 - (height / 2.0)
+        "top": parentHeight / 2.0 - (height / 2.0) - (padding / 2.0)
       });
     });
+  };
+  getCss = function(node, p) {
+    return parseFloat(node.css(p).replace("px", ""));
   };
   addCss = function() {
     var css;
