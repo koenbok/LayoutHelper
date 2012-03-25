@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+	
+	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="layout.js"></script>
+	
+	<style type="text/css" media="screen">
+	
+		body {
+			margin:0px;
+			padding:0px;
+			font: 22px/1.3em "Helvetica";
+		}
+		
+		div {
+			color:rgba(255,255,255,0.9);
+			background-color:rgba(0,150,255,0.1);
+		}
+		
+		.master {
+			background-color:rgba(0,150,255,0.15);
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			width: 300px;
+		}
+
+		.detail {
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			right: 0px;
+			left: 300px;
+		}
+
+		.header {
+			position: absolute;
+			height: 100px;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+		}
+		.content {
+			position: absolute;
+			top: 100px;
+			left: 0px;
+			bottom:100px;
+			width: 100%;
+			overflow: scroll;
+			overflow-x: hidden;
+		}
+		.footer {
+			position: absolute;
+			height: 100px;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+		}
+
+		.master .content .row 
+			{position: relative; width: 100%; height: 50px; margin-bottom: 5px;}
+		.master .content .row .image 
+			{position: absolute; left: 10px; width: 100px;}
+		.master .content .row .text 
+			{position: absolute; left: 120px; right: 0px;}
+
+		.detail .content .row 
+			{position: relative; width: 100%; height: 100px; margin-bottom: 5px;}
+		.detail .content .row .image 
+			{position: absolute; left: 30px; top: 10px; width: 40px; height: 40px}
+		.detail .content .row .text 
+			{position: absolute; left: 80px; top: 10px; right: 0px; bottom: 10px}
+	</style>
+	
+</head>
+<body>
+	<div class="master">
+		<div class="header">
+			<div class="midx midy">search, new</div>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+			<div class="row">
+				<div class="image midy">image</div>
+				<div class="text midy">text</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="midx midy">other</div>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="header">
+			<div class="midx midy">header</div>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+			<div class="row">
+				<div class="image"></div>
+				<div class="text"></div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="midx midy">footer</div>
+		</div>
+	</div>
+</body>
+</html>
